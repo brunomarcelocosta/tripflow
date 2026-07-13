@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\Requests\Audit\" />
+    <Folder Include="DTOs\Requests\CRM\" />
+    <Folder Include="DTOs\Requests\Roles\" />
+    <Folder Include="DTOs\Requests\Users\" />
+    <Folder Include="DTOs\Requests\Miles\" />
+    <Folder Include="DTOs\Requests\Payments\" />
+    <Folder Include="DTOs\Requests\Pricing\" />
+    <Folder Include="DTOs\Requests\Proposals\" />
+    <Folder Include="DTOs\Requests\Quotes\" />
+    <Folder Include="DTOs\Requests\Subscriptions\" />
+    <Folder Include="DTOs\Responses\Audit\" />
+    <Folder Include="DTOs\Responses\CRM\" />
+    <Folder Include="DTOs\Responses\Roles\" />
+    <Folder Include="DTOs\Responses\Users\" />
+    <Folder Include="DTOs\Responses\Miles\" />
+    <Folder Include="DTOs\Responses\Payments\" />
+    <Folder Include="DTOs\Responses\Pricing\" />
+    <Folder Include="DTOs\Responses\Proposals\" />
+    <Folder Include="DTOs\Responses\Quotes\" />
+    <Folder Include="DTOs\Responses\Subscriptions\" />
+    <Folder Include="UseCases\Audit\" />
+    <Folder Include="UseCases\CRM\" />
+    <Folder Include="UseCases\Roles\" />
+    <Folder Include="UseCases\Users\" />
+    <Folder Include="UseCases\Miles\" />
+    <Folder Include="UseCases\Payments\" />
+    <Folder Include="UseCases\Pricing\" />
+    <Folder Include="UseCases\Proposals\" />
+    <Folder Include="UseCases\Quotes\" />
+    <Folder Include="UseCases\Subscriptions\" />
+    <Folder Include="Validators\Audit\" />
+    <Folder Include="Validators\CRM\" />
+    <Folder Include="Validators\Roles\" />
+    <Folder Include="Validators\Users\" />
+    <Folder Include="Validators\Miles\" />
+    <Folder Include="Validators\Payments\" />
+    <Folder Include="Validators\Pricing\" />
+    <Folder Include="Validators\Proposals\" />
+    <Folder Include="Validators\Quotes\" />
+    <Folder Include="Validators\Subscriptions\" />
+    <Folder Include="Validators\Tenants\" />
+    <Folder Include="DTOs\Requests\Tenants\" />
+    <Folder Include="DTOs\Requests\Pricing\" />
+    <Folder Include="DTOs\Responses\Tenants\" />
+    <Folder Include="DTOs\Responses\Pricing\" />
+    <Folder Include="UseCases\Tenants\Interfaces\" />
+    <Folder Include="UseCases\Pricing\Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.1.1" />
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.8" />
+    <PackageReference Include="PuppeteerSharp" Version="20.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tripflow.Infra\Tripflow.Infra.csproj" />
+  </ItemGroup>
+
+</Project>

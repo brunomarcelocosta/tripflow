@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.8">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Tripflow.Infra.IoC\Tripflow.Infra.IoC.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Controllers\CRM\" />
+		<Folder Include="Controllers\Identity\" />
+		<Folder Include="Controllers\Miles\" />
+		<Folder Include="Controllers\Payments\" />
+		<Folder Include="Controllers\Pricing\" />
+		<Folder Include="Controllers\Proposals\" />
+		<Folder Include="Controllers\Quotes\" />
+		<Folder Include="Controllers\Subscriptions\" />
+	</ItemGroup>
+
+</Project>

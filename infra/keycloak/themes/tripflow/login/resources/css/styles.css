@@ -1,0 +1,445 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Inter, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#kc-content,
+#kc-content-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.tripflow-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+/* ── Painel institucional ── */
+
+.tripflow-brand {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 48px;
+  background: linear-gradient(145deg, #07172d 0%, #0b1b33 35%, #1e3a8a 70%, #2563eb 100%);
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.tripflow-brand::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.22), transparent 32%),
+    radial-gradient(circle at 80% 80%, rgba(37, 99, 235, 0.25), transparent 35%);
+  pointer-events: none;
+}
+
+.tripflow-brand__content {
+  position: relative;
+  z-index: 1;
+  max-width: 460px;
+}
+
+.tripflow-brand__headline {
+  margin: 0 0 18px;
+  font-size: 2rem;
+  line-height: 1.24;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+}
+
+.tripflow-brand .tripflow-logo {
+  margin-bottom: 40px;
+}
+
+.tripflow-brand__text {
+  margin: 0 0 32px;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.tripflow-brand__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 16px;
+}
+
+.tripflow-brand__list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.tripflow-brand__list li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.45);
+  flex-shrink: 0;
+}
+
+/* ── Logo ── */
+
+.tripflow-logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.tripflow-logo--sm {
+  gap: 8px;
+}
+
+.tripflow-logo--md {
+  gap: 10px;
+}
+
+.tripflow-logo--lg {
+  gap: 12px;
+}
+
+.tripflow-logo--xl {
+  gap: 14px;
+}
+
+.tripflow-logo__icon {
+  flex-shrink: 0;
+  display: block;
+}
+
+.tripflow-logo--sm .tripflow-logo__icon {
+  width: 28px;
+  height: 28px;
+}
+
+.tripflow-logo--md .tripflow-logo__icon {
+  width: 36px;
+  height: 36px;
+}
+
+.tripflow-logo--lg .tripflow-logo__icon {
+  width: 48px;
+  height: 48px;
+}
+
+.tripflow-logo--xl .tripflow-logo__icon {
+  width: 56px;
+  height: 56px;
+}
+
+.tripflow-logo__text {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  user-select: none;
+}
+
+.tripflow-logo--sm .tripflow-logo__text {
+  font-size: 1.125rem;
+}
+
+.tripflow-logo--md .tripflow-logo__text {
+  font-size: 1.25rem;
+}
+
+.tripflow-logo--lg .tripflow-logo__text {
+  font-size: 1.875rem;
+}
+
+.tripflow-logo--xl .tripflow-logo__text {
+  font-size: 2.25rem;
+}
+
+.tripflow-logo--light .tripflow-logo__trip {
+  color: #0b1b33;
+}
+
+.tripflow-logo--light .tripflow-logo__flow {
+  color: #2563eb;
+}
+
+.tripflow-logo--dark .tripflow-logo__trip {
+  color: #ffffff;
+}
+
+.tripflow-logo--dark .tripflow-logo__flow {
+  color: #38bdf8;
+}
+
+/* ── Card de login ── */
+
+.tripflow-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 32px;
+  background: #f8fafc;
+}
+
+.tripflow-card {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 28px;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
+  padding: 48px;
+}
+
+.tripflow-card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.tripflow-card__header .tripflow-logo {
+  margin-bottom: 20px;
+}
+
+.tripflow-card__title {
+  margin: 0 0 8px;
+  font-size: 1.625rem;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+.tripflow-card__subtitle {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+/* ── Alertas e erros ── */
+
+.tripflow-alert {
+  margin-bottom: 20px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.tripflow-field {
+  margin-bottom: 20px;
+}
+
+.tripflow-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.tripflow-input {
+  width: 100%;
+  height: 52px;
+  padding: 0 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 0.95rem;
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.tripflow-input::placeholder {
+  color: #94a3b8;
+}
+
+.tripflow-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.tripflow-input[aria-invalid="true"] {
+  border-color: #dc2626;
+}
+
+.tripflow-input[aria-invalid="true"]:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.1);
+}
+
+.tripflow-field-error {
+  display: block;
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* ── Checkbox / links ── */
+
+.tripflow-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.tripflow-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.tripflow-checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+.tripflow-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.tripflow-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* ── Botão ── */
+
+.tripflow-button {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.tripflow-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.28);
+}
+
+.tripflow-button:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+/* ── Rodapé ── */
+
+.tripflow-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 28px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.tripflow-footer__icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: #94a3b8;
+}
+
+.tripflow-register {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+#kc-form-login {
+  margin: 0;
+}
+
+#kc-form-buttons {
+  margin: 0;
+}
+
+/* ── Responsivo ── */
+
+@media (max-width: 900px) {
+  .tripflow-page {
+    grid-template-columns: 1fr;
+  }
+
+  .tripflow-brand {
+    display: none;
+  }
+
+  .tripflow-login {
+    min-height: 100vh;
+    padding: 24px 16px;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.07), transparent 52%),
+      #f8fafc;
+  }
+
+  .tripflow-card {
+    max-width: calc(100% - 32px);
+    padding: 28px;
+    border-radius: 24px;
+  }
+
+  .tripflow-brand__headline {
+    font-size: 1.75rem;
+  }
+}

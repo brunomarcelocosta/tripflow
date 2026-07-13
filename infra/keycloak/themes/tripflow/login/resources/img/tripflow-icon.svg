@@ -1,0 +1,36 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="tripflowTitle tripflowDesc">
+  <title id="tripflowTitle">TripFlow Icon</title>
+  <desc id="tripflowDesc">Minimal technology-inspired TripFlow logo combining a stylized T, flowing path, and upward travel arrow.</desc>
+
+  <defs>
+    <linearGradient id="tripflowBlue" x1="117" y1="404" x2="408" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1B33"/>
+      <stop offset="0.48" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <linearGradient id="tripflowNavy" x1="91" y1="160" x2="355" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07172D"/>
+      <stop offset="1" stop-color="#0B1B33"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="50" y="74" width="415" height="370" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#0B1B33" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <path
+      d="M94 203C100.5 166.5 131.5 140 168.5 140H354C346.5 155.5 333 168.5 316 175.5L255.5 200.5C230 211 212 232.5 207.5 259L183.5 398L163.5 366C151.5 346.5 148 323 154 300.5L180 203H94Z"
+      fill="url(#tripflowNavy)"
+    />
+    <path
+      d="M137 406C180 391 208 358.5 225.5 314.5C243 270.5 266 239 310.5 218.5C349.5 200.5 377 171.5 397.5 134L367.5 126.5C360 124.5 359 114 366 110.5L439 75C445 72 451.5 77.5 449.5 84L425.5 161C423.2 168.2 412.7 167.6 411.5 160L407 131.5C381 177.5 346 208.5 302 229C264 246.5 246 274 231 312.5C209 369 174 402 137 406Z"
+      fill="url(#tripflowBlue)"
+    />
+    <path
+      d="M289 246H382C375 274.5 351.5 293 322 293H268C271.5 273 277.5 257 289 246Z"
+      fill="#2563EB"
+    />
+  </g>
+</svg>
