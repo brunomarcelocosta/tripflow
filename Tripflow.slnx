@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/00 - API/">
+    <Project Path="src/Tripflow.API/Tripflow.API.csproj" />
+  </Folder>
+  <Folder Name="/01 - Application/">
+    <Project Path="src/Tripflow.Application/Tripflow.Application.csproj" Id="12099cc2-50ef-4420-97a8-0361fc8870c7" />
+  </Folder>
+  <Folder Name="/02 - Domain/">
+    <Project Path="src/Tripflow.Domain/Tripflow.Domain.csproj" Id="266451ee-3fb9-42dd-94aa-ba39070c4239" />
+  </Folder>
+  <Folder Name="/03 - Infra/">
+    <Project Path="src/Tripflow.Infra/Tripflow.Infra.csproj" Id="8f96cf02-568e-488e-a2fe-a20e1df56f05" />
+  </Folder>
+  <Folder Name="/04 - Infra.IoC/">
+    <Project Path="src/Tripflow.Infra.IoC/Tripflow.Infra.IoC.csproj" Id="ac3b350a-5025-42a8-a3b0-9bdf1bc6c467" />
+  </Folder>
+  <Folder Name="/05 - Tests/">
+    <Project Path="tests/Tripflow.IntegrationTests/Tripflow.IntegrationTests.csproj" />
+    <Project Path="tests/Tripflow.UnitTests/Tripflow.UnitTests.csproj" />
+  </Folder>
+</Solution>

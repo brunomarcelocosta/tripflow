@@ -1,0 +1,24 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+.vs*
+/src/Tripflow.API/bin/Debug/net10.0
+/src/Tripflow.API/obj
+/src/Tripflow.API/bin
+*.user
+/tests/Tripflow.IntegrationTests/bin
+/tests/Tripflow.IntegrationTests/obj
+/tests/Tripflow.UnitTests/bin
+/tests/Tripflow.UnitTests/obj
+/src/Tripflow.Application/obj
+/src/Tripflow.Domain/obj
+/src/Tripflow.Infra/obj
+/src/Tripflow.Infra.IoC/obj
+/src/Tripflow.Application/bin
+/src/Tripflow.Domain/bin
+/src/Tripflow.Infra/bin
+/src/Tripflow.Infra.IoC/bin
+/tests/Tripflow.UnitTests/TestResults
+/tools/BootstrapDevUsers/obj
+/tools/BootstrapDevUsers/bin/Debug/net10.0
